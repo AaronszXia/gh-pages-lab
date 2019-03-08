@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Creating and Hosting a Personal Site on GitHub"
+date: 2019-03-08
+---
+
 # Creating and Hosting a Personal Site on GitHub
 
 A step-by-step beginner's guide to creating a personal website and blog using Jekyll and hosting it for free using GitHub Pages.
