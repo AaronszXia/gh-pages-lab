@@ -42,7 +42,7 @@ h4 {
     font-size: 1.9em; */
 }
 
-nav ul,
+/* nav ul,
 footer ul {
     font-size: 1em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -60,17 +60,17 @@ footer ul li {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
+} */
 
 /* Blog */
-ul.posts {
+/* ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
-}
+} */
 
 /* CV */
 .cv {
