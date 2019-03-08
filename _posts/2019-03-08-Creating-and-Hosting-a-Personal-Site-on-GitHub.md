@@ -53,7 +53,7 @@ Usually, people just host the files that contain their code, so what you see on 
 
 ### GitHub Pages
 
-GitHub Pages are public webpages hosted for free through GitHub. GitHub users can create and host both personal websites (one allowed per user) and websites related to specific GitHub projects. Pages lets you do the same things as GitHub, but if the repository is named a certain way and files inside it are HTML or Markdown, you can view the file like any other website. GitHub Pages is the self-aware version of GitHub. Pages also comes with a powerful [static site generator](http://staticgen.com/)called [Jekyll](http://jekyllrb.com/), which we'll learn more about later on.
+GitHub Pages are public webpages hosted for free through GitHub. GitHub users can create and host both personal websites (one allowed per user) and websites related to specific GitHub projects. Pages lets you do the same things as GitHub, but if the repository is named a certain way and files inside it are HTML or Markdown, you can view the file like any other website. GitHub Pages is the self-aware version of GitHub. Pages also comes with a powerful [static site generator](http://staticgen.com/) called [Jekyll](http://jekyllrb.com/), which we'll learn more about later on.
 
 ## Getting Started with GitHub Pages
 
@@ -78,31 +78,34 @@ On the resulting page, put this markup inside of the GitHub text editor:
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+
+<head>
+    <title>Hank Quinlan, Horrible Cop</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blurb">
+            <h1>Hi there, I'm Hank Quinlan!</h1>
+            <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+        </div><!-- /.blurb -->
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+            <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
 ```
 
@@ -123,32 +126,39 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -177,33 +187,36 @@ Add a link to `main.css` (new markup is in bold):
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+
+<head>
+    <title>Hank Quinlan, Horrible Cop</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blurb">
+            <h1>Hi there, I'm Hank Quinlan!</h1>
+            <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+        </div><!-- /.blurb -->
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+            <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
 ```
 
@@ -329,7 +342,7 @@ date: 2014-04-30
 Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
 ```
 
-Note the file extension `.md` stands for Markdown, and the Markdown syntax used inside the file gets converted to HTML by Jekyll. Like Wikitext, [Markdown](https://daringfireball.net/projects/markdown/) is a markup language with a syntax closer to plain text. The idea of Markdown is to get out of the author's way so they can write their HTML content quickly, making Markdown very suitable as a blog authoring syntax. If you aren't already, you'll want to get familiar with Markdown syntax, and this [printable cheatsheet (PDF)](http://packetlife.net/media/library/16/Markdown.pdf)will be your best friend.
+Note the file extension `.md` stands for Markdown, and the Markdown syntax used inside the file gets converted to HTML by Jekyll. Like Wikitext, [Markdown](https://daringfireball.net/projects/markdown/) is a markup language with a syntax closer to plain text. The idea of Markdown is to get out of the author's way so they can write their HTML content quickly, making Markdown very suitable as a blog authoring syntax. If you aren't already, you'll want to get familiar with Markdown syntax, and this [printable cheatsheet (PDF)](http://packetlife.net/media/library/16/Markdown.pdf) will be your best friend.
 
 After committing the new post, navigate to [http://username.github.io/YYYY/MM/DD/name-of-your-post](http://jmcglone.com/guides/github-pages/#) to view it.
 
