@@ -7,15 +7,27 @@ title: 夏龙飞的博客
 <html lang="en">
 
 <head>
+  <!-- <link rel="icon" href="{{ site.baseurl }}/favicon.ico"> -->
+
   <title>欢迎访问夏龙飞的博客</title>
 
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   {% include bootstrap-4.html %}
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+  <!-- Custom styles for this template -->
   <link href="{{ site.baseurl }}/css/cover.css" rel="stylesheet">
 </head>
 
-<body class="text-center coverpicture">
+<body class="text-center"
+      style="background-image: url('{{ site.baseurl }}/images/architecture-building-city-1121782.jpg');
+             background-position: center center;
+             background-size: cover;">
+
   <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header></header>
+
+    <header class="masthead mb-auto">
+    </header>
 
     <main role="main" class="inner">
       <h1 class="cover-heading">永远相信</h1>
@@ -27,13 +39,15 @@ title: 夏龙飞的博客
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
-        <p>Cover picture by
-          <a href="https://www.pexels.com/photo/reflection-of-buildings-on-body-of-water-1121782/">Pawel L</a> 
-          at <a href="https://www.pexels.com/">Pexels</a>.
+        <p>Cover picture by 
+          <a href="https://www.pexels.com/photo/reflection-of-buildings-on-body-of-water-1121782/">Pawel L</a>
+           at <a href="https://www.pexels.com/">Pexels</a>.          
         </p>
       </div>
     </footer>
+
   </div>
+
 </body>
 
 </html>
